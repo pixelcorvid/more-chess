@@ -1,0 +1,9 @@
+<h1>ChessJam 2018</h1>
+<button (click)="setBoardState('top')">top</button>
+<button (click)="setBoardState('p1')">Player 1</button>
+<button (click)="setBoardState('p2')">Player 2</button>
+<div class="board">
+    <div class="board-tiles" [class.p1]="viewIsPlayer1" [class.p2]="viewIsPlayer2">
+        <tile *ngFor="let tile of tiles" [tile]="tile" ></tile>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+:host {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .board {
+    width: 60vh;
+    height: 60vh;
+    perspective: 100vh;
+    .board-tiles {
+      transition: all 1s;
+      border: solid 10px #333333;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      transform: rotateX(0deg) rotateZ(0deg) translateZ(-10vh);
+      &.p1 {
+        transform: rotateX(75deg) rotateZ(0deg) translateZ(-10vh);
+      }
+      &.p2 {
+        transform: rotateX(75deg) rotateZ(180deg) translateZ(-10vh);
+      }
+    }
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+  }
+}

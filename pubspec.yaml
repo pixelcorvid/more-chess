@@ -1,0 +1,17 @@
+name: chessjam_2018_app
+description: A web app that uses AngularDart Components
+version: 0.0.1
+#homepage: https://www.example.com
+#author: indie <email@example.com>
+
+dependencies:
+  angular: ^5.0.0-alpha
+  http: ^0.11.3+13
+  pwa: ^0.1.10
+
+dev_dependencies:
+  build_runner: ^0.8.0
+  build_test: ^0.10.1+1
+  build_web_compilers: ^0.3.4+1
+  sass_builder: any
+
